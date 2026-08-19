@@ -27,8 +27,7 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
     }
 
     const revealTargets = root.querySelectorAll("[data-about-reveal]");
-    const dnaTargets = root.querySelectorAll("[data-about-dna]");
-    const principleTargets = root.querySelectorAll("[data-about-principle]");
+
 
     animate(revealTargets, {
       opacity: [0, 1],
@@ -38,21 +37,6 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
       ease: "outQuad",
     });
 
-    animate(dnaTargets, {
-      opacity: [0, 1],
-      translateY: [14, 0],
-      delay: (_: any, index: number) => 180 + index * 50,
-      duration: 280,
-      ease: "outQuad",
-    });
-
-    animate(principleTargets, {
-      opacity: [0, 1],
-      translateY: [14, 0],
-      delay: (_: any, index: number) => 320 + index * 50,
-      duration: 280,
-      ease: "outQuad",
-    });
   }, []);
 
   return (
@@ -140,33 +124,6 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
               </Button>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section className="space-y-4" data-about-reveal>
-        <h2 className="font-display text-3xl uppercase sm:text-4xl">
-          Execution Snapshot
-        </h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {/* Cards will be added here */}
-        </div>
-      </section>
-
-      <section className="space-y-4" data-about-reveal>
-        <h2 className="font-display text-3xl uppercase sm:text-4xl">
-          Developer DNA
-        </h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {/* Cards will be added here */}
-        </div>
-      </section>
-
-      <section className="space-y-4" data-about-reveal>
-        <h2 className="font-display text-3xl uppercase sm:text-4xl">
-          How I Work
-        </h2>
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-3">
-          {/* Cards will be added here */}
         </div>
       </section>
 
