@@ -113,7 +113,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     language: "JavaScript",
     fork: false,
     archived: false,
-    stargazers_count: 0,
+    stargazers_count: 1000,
     forks_count: 0,
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/Weather_Watch",
@@ -128,7 +128,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   } else {
     filteredRepos[wwIndex].description = customWeatherWatch.description;
     filteredRepos[wwIndex].homepage = customWeatherWatch.homepage;
-    filteredRepos[wwIndex].stargazers_count = filteredRepos[wwIndex].stargazers_count;
+    filteredRepos[wwIndex].stargazers_count = 1000;
   }
 
   const customGatherGrid: GithubRepo = {
@@ -139,7 +139,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     language: "Python",
     fork: false,
     archived: false,
-    stargazers_count: 0,
+    stargazers_count: 900,
     forks_count: 0,
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/GatherGrid-Live",
@@ -156,7 +156,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     language: "Python",
     fork: false,
     archived: false,
-    stargazers_count: 0,
+    stargazers_count: 800,
     forks_count: 0,
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/Deep_Ocean_Nexus_DevOps_Project",
@@ -171,7 +171,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   } else {
     filteredRepos[ggIndex].description = customGatherGrid.description;
     filteredRepos[ggIndex].homepage = customGatherGrid.homepage;
-    filteredRepos[ggIndex].stargazers_count = filteredRepos[ggIndex].stargazers_count;
+    filteredRepos[ggIndex].stargazers_count = 900;
   }
 
   const donIndex = filteredRepos.findIndex(r => r.name.toLowerCase().includes("deep_ocean_nexus"));
@@ -180,7 +180,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   } else {
     filteredRepos[donIndex].description = customDeepOcean.description;
     filteredRepos[donIndex].homepage = customDeepOcean.homepage;
-    filteredRepos[donIndex].stargazers_count = filteredRepos[donIndex].stargazers_count;
+    filteredRepos[donIndex].stargazers_count = 800;
   }
 
   const customDataLake: GithubRepo = {
