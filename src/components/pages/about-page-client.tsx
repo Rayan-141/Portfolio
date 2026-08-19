@@ -113,15 +113,7 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
               >
                 <Link href="/project">Explore Projects</Link>
               </Button>
-              <Button
-                asChild
-                variant="secondary"
-                className="w-full border-4 border-black shadow-retro-sm sm:w-auto uppercase"
-              >
-                <Link href="mailto:contact@rayan.com">
-                  Business Inquiries
-                </Link>
-              </Button>
+
             </div>
           </div>
         </div>
