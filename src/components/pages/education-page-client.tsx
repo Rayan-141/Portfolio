@@ -78,7 +78,7 @@ export function EducationPageClient() {
               rel="noreferrer noopener"
               className="block group h-full"
             >
-              <Card className="flex flex-col h-full border-4 border-black bg-secondary shadow-retro-md transition-transform duration-200 group-hover:-translate-y-1 group-hover:shadow-retro-lg">
+              <Card className="flex flex-col h-full border-4 border-black bg-card dark:bg-secondary shadow-retro-md transition-transform duration-200 group-hover:-translate-y-1 group-hover:shadow-retro-lg">
                 <Card.Header className="flex-row items-center gap-4 sm:gap-6">
                   <div className="relative h-20 w-20 sm:h-24 sm:w-24 flex-shrink-0 dark:bg-white dark:rounded-xl">
                     <Image
@@ -89,10 +89,10 @@ export function EducationPageClient() {
                     />
                   </div>
                   <div>
-                    <Card.Title className="font-display text-2xl uppercase text-secondary-foreground leading-tight">
+                    <Card.Title className="font-display text-2xl uppercase text-card-foreground dark:text-secondary-foreground leading-tight">
                       {edu.degree}
                     </Card.Title>
-                    <p className="text-xl font-black uppercase text-secondary-foreground mt-1">
+                    <p className="text-xl font-black uppercase text-card-foreground dark:text-secondary-foreground mt-1">
                       {edu.institution}
                     </p>
                   </div>
@@ -101,7 +101,7 @@ export function EducationPageClient() {
                   <p className="font-black uppercase text-sm tracking-widest text-primary">
                     {edu.period}
                   </p>
-                  <p className="font-bold text-sm text-secondary-foreground/80 uppercase">
+                  <p className="font-bold text-sm text-card-foreground/80 dark:text-secondary-foreground/80 uppercase">
                     {edu.location}
                   </p>
                 </Card.Content>
