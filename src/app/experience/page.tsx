@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Experience",
@@ -24,11 +25,46 @@ export default function ExperiencePage() {
         <h2 className="font-display text-2xl uppercase sm:text-3xl">
           Career Timeline
         </h2>
-        <div className="border-4 border-black bg-card p-4 shadow-retro-sm">
-          <p className="font-medium text-sm sm:text-base text-muted-foreground">
-            Experience timeline will be added here.
-          </p>
+        
+        {/* InAmigos Foundation Internship */}
+        <div className="border-4 border-black bg-card p-4 shadow-retro-sm md:p-6 relative transition-transform hover:-translate-y-1 hover:shadow-retro-md">
+          <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
+            <div className="shrink-0 border-4 border-black overflow-hidden bg-white w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center relative">
+              <Image 
+                src="/inamigos_light.png" 
+                alt="InAmigos Foundation Logo Light" 
+                fill 
+                className="object-contain p-1 block dark:hidden"
+              />
+              <Image 
+                src="/inamigos_dark.png" 
+                alt="InAmigos Foundation Logo Dark" 
+                fill 
+                className="object-contain p-1 hidden dark:block bg-black"
+              />
+            </div>
+            
+            <div className="flex-1 space-y-2">
+              <div>
+                <h3 className="font-display text-xl font-bold uppercase tracking-tight text-black dark:text-white sm:text-2xl">
+                  Web Developer <span className="text-sm font-medium tracking-normal text-muted-foreground uppercase">(Internship)</span>
+                </h3>
+                <p className="font-pixel text-xs sm:text-sm text-primary font-bold mt-1">
+                  InAmigos Foundation
+                </p>
+              </div>
+              <div className="flex flex-wrap gap-2 text-xs font-black uppercase sm:text-sm">
+                <span className="flex items-center gap-1 bg-[#d7d7d7] dark:bg-[#2f2f2f] px-2 py-1 text-black dark:text-white border-2 border-black">
+                  Remote
+                </span>
+                <span className="flex items-center gap-1 bg-[#d7d7d7] dark:bg-[#2f2f2f] px-2 py-1 text-black dark:text-white border-2 border-black">
+                  May 2026 - July 2026 (2 Months)
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
+
       </section>
     </div>
   );
