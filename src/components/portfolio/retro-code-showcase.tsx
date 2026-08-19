@@ -145,7 +145,7 @@ export function RetroCodeShowcase() {
     animate(gridItems, {
       opacity: [0, 1],
       translateY: [18, 0],
-      delay: (_, index) => 180 + index * 85,
+      delay: (_: any, index: number) => 180 + index * 85,
       duration: 380,
       ease: "outQuad",
     });
@@ -154,7 +154,7 @@ export function RetroCodeShowcase() {
     animate(flipCardsNodes, {
       opacity: [0, 1],
       scale: [0.96, 1],
-      delay: (_, index) => 260 + index * 90,
+      delay: (_: any, index: number) => 260 + index * 90,
       duration: 360,
       ease: "outQuad",
     });
@@ -191,7 +191,7 @@ export function RetroCodeShowcase() {
       animate(tabTargets, {
         opacity: [0.7, 1],
         translateY: [4, 0],
-        delay: (_, index) => index * 45,
+        delay: (_: any, index: number) => index * 45,
         duration: 240,
         ease: "outQuad",
       });
