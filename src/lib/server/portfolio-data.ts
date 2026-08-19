@@ -107,7 +107,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
 
   const customWeatherWatch: GithubRepo = {
     id: 999999999,
-    name: "Weather_Watch",
+    name: "Weather Watch",
     full_name: "Rayan-141/Weather_Watch",
     description: "A MERN stack weather dashboard providing live weather data, 21-day forecasts, current location weather, charts, maps, and real-time alerts using free weather APIs.",
     language: "JavaScript",
@@ -126,6 +126,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   if (wwIndex === -1) {
     filteredRepos.unshift(customWeatherWatch);
   } else {
+    filteredRepos[wwIndex].name = customWeatherWatch.name;
     filteredRepos[wwIndex].description = customWeatherWatch.description;
     filteredRepos[wwIndex].homepage = customWeatherWatch.homepage;
     filteredRepos[wwIndex].stargazers_count = 1000;
@@ -133,7 +134,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
 
   const customGatherGrid: GithubRepo = {
     id: 999999998,
-    name: "GatherGrid-Live",
+    name: "Gather Grid",
     full_name: "Rayan-141/GatherGrid-Live",
     description: "Design a GraphQL-based Event Ticket Booking System that allows users to browse events, check available seats, reserve them, and complete bookings with payments using Neo4j GraphDB and FastAPI.",
     language: "Python",
@@ -150,7 +151,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
 
   const customDeepOcean: GithubRepo = {
     id: 999999997,
-    name: "Deep_Ocean_Nexus",
+    name: "Deep-Ocean Nexus",
     full_name: "Rayan-141/Deep_Ocean_Nexus_DevOps_Project",
     description: "Global Network Operations Center — Subsea Communications Infrastructure Platform. A full-stack cloud-native DevOps project simulating a mission-critical Global NOC for monitoring subsea fiber-optic telecommunication cables globally.",
     language: "Python",
@@ -169,6 +170,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   if (ggIndex === -1) {
     filteredRepos.unshift(customGatherGrid);
   } else {
+    filteredRepos[ggIndex].name = customGatherGrid.name;
     filteredRepos[ggIndex].description = customGatherGrid.description;
     filteredRepos[ggIndex].homepage = customGatherGrid.homepage;
     filteredRepos[ggIndex].stargazers_count = 900;
@@ -178,6 +180,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   if (donIndex === -1) {
     filteredRepos.unshift(customDeepOcean);
   } else {
+    filteredRepos[donIndex].name = customDeepOcean.name;
     filteredRepos[donIndex].description = customDeepOcean.description;
     filteredRepos[donIndex].homepage = customDeepOcean.homepage;
     filteredRepos[donIndex].stargazers_count = 800;
@@ -185,7 +188,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
 
   const customDataLake: GithubRepo = {
     id: 999999996,
-    name: "DataLake_BigData_AWS_Project",
+    name: "DataLake BigData AWS Project",
     full_name: "Rayan-141/DataLake_BigData_AWS_Project",
     description: "An end-to-end Big Data pipeline and Data Lake architecture built on AWS, enabling scalable data ingestion, processing, and analytics.",
     language: "Python",
@@ -204,6 +207,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   if (dlIndex === -1) {
     filteredRepos.unshift(customDataLake);
   } else {
+    filteredRepos[dlIndex].name = customDataLake.name;
     filteredRepos[dlIndex].description = customDataLake.description;
     filteredRepos[dlIndex].homepage = customDataLake.homepage;
     filteredRepos[dlIndex].topics = customDataLake.topics;
