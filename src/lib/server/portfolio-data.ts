@@ -118,7 +118,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/Weather_Watch",
     homepage: "https://rayan-141.github.io/Weather_Watch/",
-    topics: ["react", "nodejs", "express", "mongodb", "weather-api"],
+    topics: ["api", "express", "expressjs", "full-stack", "react", "nodejs", "mongodb", "weather-api", "javascript", "vite", "css3", "glassmorphism", "jwt", "bcrypt", "mongoose", "dashboard", "forecast", "geocoding", "open-meteo", "frontend"],
     updated_at: "2026-08-19T00:00:00.000Z",
   };
 
@@ -145,7 +145,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/GatherGrid-Live",
     homepage: "https://gather-grid-live.vercel.app/",
-    topics: ["graphql", "neo4j", "fastapi", "python"],
+    topics: ["graphql", "neo4j", "fastapi", "python", "graph-database", "graphene", "api", "full-stack", "backend", "frontend", "system-design", "event-booking", "ticket-system", "javascript", "html", "css", "cypher", "qrcode", "fetch-api", "vercel"],
     updated_at: "2026-08-19T00:00:00.000Z",
   };
 
@@ -162,7 +162,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/Deep_Ocean_Nexus_DevOps_Project",
     homepage: "https://deepocean-nexus.onrender.com/",
-    topics: ["docker", "kubernetes", "jenkins", "terraform", "prometheus", "grafana", "flask", "devops"],
+    topics: ["docker", "kubernetes", "jenkins", "terraform", "prometheus", "grafana", "flask", "devops", "python", "ci-cd", "cloud-native", "infrastructure-as-code", "microservices", "monitoring", "telemetry", "leafletjs", "arcgis", "automation", "full-stack", "api"],
     updated_at: "2026-08-19T00:00:00.000Z",
   };
 
@@ -199,7 +199,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     watchers_count: 0,
     html_url: "https://github.com/Rayan-141/DataLake_BigData_AWS_Project",
     homepage: "https://docs.google.com/document/d/1ZoXt8zK7-e9JmOkTESks6rCYaw/edit?usp=sharing",
-    topics: ["aws", "data-lake", "big-data", "s3", "athena", "glue"],
+    topics: ["aws", "data-lake", "big-data", "s3", "athena", "glue", "python", "data-engineering", "pipeline", "analytics", "cloud", "etl", "data-processing", "scalable", "architecture", "boto3", "sql", "pyspark", "emr", "kinesis"],
     updated_at: "2026-08-19T00:00:00.000Z",
   };
 
