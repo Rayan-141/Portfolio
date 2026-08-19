@@ -256,34 +256,7 @@ export function ProjectsGrid({
                         </span>
                       ) : null}
                     </div>
-                    {repo.name.toLowerCase() !== "weather_watch" && repo.name.toLowerCase() !== "gathergrid-live" && repo.name.toLowerCase() !== "deep_ocean_nexus" && (
-                      <div className="grid grid-cols-2 gap-2 text-[10px] font-black uppercase sm:grid-cols-4">
-                        <span className="min-w-0 rounded-none border-2 border-black bg-muted px-2 py-1 text-center">
-                          <span className="block truncate">Language</span>
-                          <span className="block truncate text-[11px]">
-                            {repo.language ?? "Mixed"}
-                          </span>
-                        </span>
-                        <span className="min-w-0 rounded-none border-2 border-black bg-muted px-2 py-1 text-center">
-                          <span className="block truncate">Stars</span>
-                          <span className="block truncate text-[11px]">
-                            {repo.stargazers_count}
-                          </span>
-                        </span>
-                        <span className="min-w-0 rounded-none border-2 border-black bg-muted px-2 py-1 text-center">
-                          <span className="block truncate">Forks</span>
-                          <span className="block truncate text-[11px]">
-                            {repo.forks_count}
-                          </span>
-                        </span>
-                        <span className="min-w-0 rounded-none border-2 border-black bg-muted px-2 py-1 text-center">
-                          <span className="block truncate">Watch</span>
-                          <span className="block truncate text-[11px]">
-                            {repo.watchers_count ?? 0}
-                          </span>
-                        </span>
-                      </div>
-                    )}
+
                     {repo.homepage ? (
                       <div className="grid grid-cols-1 gap-2">
                         <Button

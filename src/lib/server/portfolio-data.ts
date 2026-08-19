@@ -102,7 +102,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
   }
 
   const filteredRepos = Array.from(dedupedById.values()).filter(
-    (repo) => !repo.name.startsWith(".") && repo.name.toLowerCase() !== "rodos",
+    (repo) => !repo.name.startsWith(".") && repo.name.toLowerCase() !== "rodos" && repo.name.toLowerCase() !== "portfolio",
   );
 
   const customWeatherWatch: GithubRepo = {
@@ -181,6 +181,33 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     filteredRepos[donIndex].description = customDeepOcean.description;
     filteredRepos[donIndex].homepage = customDeepOcean.homepage;
     filteredRepos[donIndex].stargazers_count = filteredRepos[donIndex].stargazers_count;
+  }
+
+  const customDataLake: GithubRepo = {
+    id: 999999996,
+    name: "DataLake_BigData_AWS_Project",
+    full_name: "Rayan-141/DataLake_BigData_AWS_Project",
+    description: "An end-to-end Big Data pipeline and Data Lake architecture built on AWS, enabling scalable data ingestion, processing, and analytics.",
+    language: "Python",
+    fork: false,
+    archived: false,
+    stargazers_count: 0,
+    forks_count: 0,
+    watchers_count: 0,
+    html_url: "https://github.com/Rayan-141/DataLake_BigData_AWS_Project",
+    homepage: "https://docs.google.com/document/d/1ZoXt8zK7-e9JmOkTESks6rCYaw/edit?usp=sharing",
+    topics: ["aws", "data-lake", "big-data", "s3", "athena", "glue"],
+    updated_at: "2026-08-19T00:00:00.000Z",
+  };
+
+  const dlIndex = filteredRepos.findIndex(r => r.name.toLowerCase().includes("datalake_bigdata_aws_project"));
+  if (dlIndex === -1) {
+    filteredRepos.unshift(customDataLake);
+  } else {
+    filteredRepos[dlIndex].description = customDataLake.description;
+    filteredRepos[dlIndex].homepage = customDataLake.homepage;
+    filteredRepos[dlIndex].topics = customDataLake.topics;
+    filteredRepos[dlIndex].stargazers_count = filteredRepos[dlIndex].stargazers_count;
   }
 
   return filteredRepos;
