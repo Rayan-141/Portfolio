@@ -127,8 +127,8 @@ export function Footer() {
             <Link href="/project" className="retro-link" data-footer-policy>
               Projects
             </Link>
-            <Link href="/blog" className="retro-link" data-footer-policy>
-              Blog
+            <Link href="/experience" className="retro-link" data-footer-policy>
+              Experience & Certifications
             </Link>
             <Link href="/education" className="retro-link" data-footer-policy>
               Education
