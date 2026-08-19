@@ -130,6 +130,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     filteredRepos[wwIndex].description = customWeatherWatch.description;
     filteredRepos[wwIndex].homepage = customWeatherWatch.homepage;
     filteredRepos[wwIndex].stargazers_count = 1000;
+    filteredRepos[wwIndex].topics = customWeatherWatch.topics;
   }
 
   const customGatherGrid: GithubRepo = {
@@ -174,6 +175,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     filteredRepos[ggIndex].description = customGatherGrid.description;
     filteredRepos[ggIndex].homepage = customGatherGrid.homepage;
     filteredRepos[ggIndex].stargazers_count = 900;
+    filteredRepos[ggIndex].topics = customGatherGrid.topics;
   }
 
   const donIndex = filteredRepos.findIndex(r => r.name.toLowerCase().includes("deep_ocean_nexus"));
@@ -184,6 +186,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     filteredRepos[donIndex].description = customDeepOcean.description;
     filteredRepos[donIndex].homepage = customDeepOcean.homepage;
     filteredRepos[donIndex].stargazers_count = 800;
+    filteredRepos[donIndex].topics = customDeepOcean.topics;
   }
 
   const customDataLake: GithubRepo = {
