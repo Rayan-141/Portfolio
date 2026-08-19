@@ -31,7 +31,7 @@ export default function ExperiencePage() {
           <div className="flex flex-col md:flex-row gap-4 items-start md:items-center">
             <div className="shrink-0 border-4 border-black overflow-hidden bg-white w-16 h-16 sm:w-20 sm:h-20 flex items-center justify-center relative">
               <Image 
-                src="/inamigos_light.png" 
+                src="/inamigos_light.jpg" 
                 alt="InAmigos Foundation Logo Light" 
                 fill 
                 className="object-contain p-1 block dark:hidden"
