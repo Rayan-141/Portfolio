@@ -1,7 +1,7 @@
 "use client";
 
 import { animate } from "animejs";
-import { Github, Linkedin, Twitter } from "@/components/retroui/icons";
+import { Github, Linkedin, Mail } from "@/components/retroui/icons";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
@@ -61,13 +61,11 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
                 <Github className="h-4 w-4" />
               </Link>
               <Link
-                href={xUrl}
-                target="_blank"
-                rel="noreferrer noopener"
+                href="mailto:rayanrawat141@gmail.com"
                 className="retro-social-icon"
-                aria-label="X profile"
+                aria-label="Email"
               >
-                <Twitter className="h-4 w-4" />
+                <Mail className="h-4 w-4" />
               </Link>
               <Link
                 href={linkedinUrl}

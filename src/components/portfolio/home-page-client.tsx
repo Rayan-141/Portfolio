@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Twitter } from "@/components/retroui/icons";
+import { Github, Linkedin } from "@/components/retroui/icons";
 import Link from "next/link";
 import { BlogGrid } from "@/components/portfolio/blog-grid";
 import { GithubOverviewBento } from "@/components/portfolio/github-overview-bento";

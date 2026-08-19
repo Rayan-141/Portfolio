@@ -1,7 +1,7 @@
 "use client";
 
 import { animate } from "animejs";
-import { Github, Link2, Linkedin, Twitter } from "@/components/retroui/icons";
+import { Github, Link2, Linkedin, Mail } from "@/components/retroui/icons";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import {
@@ -88,14 +88,12 @@ export function Footer() {
               <Github className="h-4 w-4" />
             </Link>
             <Link
-              href={xUrl}
+              href="mailto:rayanrawat141@gmail.com"
               className="retro-social-icon"
-              target="_blank"
-              rel="noreferrer noopener"
-              aria-label="Twitter"
+              aria-label="Email"
               data-footer-social
             >
-              <Twitter className="h-4 w-4" />
+              <Mail className="h-4 w-4" />
             </Link>
             <Link
               href={linkedinUrl}
