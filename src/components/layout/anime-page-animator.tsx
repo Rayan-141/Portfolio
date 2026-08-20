@@ -34,11 +34,11 @@ export function AnimePageAnimator() {
       animate(targets, {
         opacity: [0, 1],
         translateY: [14, 0],
-        delay: stagger(55, { start: 100 }),
-        duration: 500,
+        delay: stagger(20, { start: 50 }),
+        duration: 300,
         ease: "outCubic",
       });
-    }, 80);
+    }, 40);
 
     return () => {
       window.clearTimeout(timer);
