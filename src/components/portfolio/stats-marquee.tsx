@@ -3,7 +3,6 @@
 import { motion } from "framer-motion";
 
 const items = [
-  "B.Tech CSE Student",
   "Full Stack Developer",
   "HTML",
   "CSS",
