@@ -217,7 +217,7 @@ export async function getGithubRepos(user?: string): Promise<GithubRepo[]> {
     filteredRepos[dlIndex].stargazers_count = filteredRepos[dlIndex].stargazers_count;
   }
 
-  return filteredRepos;
+  return filteredRepos.filter(repo => repo.description && repo.description.trim() !== "");
 }
 
 export async function getGithubOverview(
