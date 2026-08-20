@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import { CertificateImageDialog } from "@/components/portfolio/certificate-image-dialog";
+
 export const metadata: Metadata = {
   title: "Certifications",
   description: "My certifications and achievements.",
@@ -29,11 +30,9 @@ export default function CertificationsPage() {
           <div className="border-4 border-black bg-card p-4 shadow-retro-sm md:p-6 relative transition-transform hover:-translate-y-1 hover:shadow-retro-md">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="shrink-0 border-4 border-black overflow-hidden bg-white w-full sm:w-32 aspect-video flex items-center justify-center relative">
-                <Image 
+                <CertificateImageDialog 
                   src="/ml-certification.jpeg" 
                   alt="Machine Learning Stanford Certificate" 
-                  fill 
-                  className="object-cover"
                 />
               </div>
               <div className="flex-1 space-y-2">
@@ -53,11 +52,9 @@ export default function CertificationsPage() {
           <div className="border-4 border-black bg-card p-4 shadow-retro-sm md:p-6 relative transition-transform hover:-translate-y-1 hover:shadow-retro-md">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="shrink-0 border-4 border-black overflow-hidden bg-white w-full sm:w-32 aspect-video flex items-center justify-center relative">
-                <Image 
+                <CertificateImageDialog 
                   src="/intro-to-networking-nvidia.jpeg" 
                   alt="Introduction To Networking NVIDIA Certificate" 
-                  fill 
-                  className="object-cover"
                 />
               </div>
               <div className="flex-1 space-y-2">
@@ -77,11 +74,9 @@ export default function CertificationsPage() {
           <div className="border-4 border-black bg-card p-4 shadow-retro-sm md:p-6 relative transition-transform hover:-translate-y-1 hover:shadow-retro-md">
             <div className="flex flex-col sm:flex-row gap-4 items-start sm:items-center">
               <div className="shrink-0 border-4 border-black overflow-hidden bg-white w-full sm:w-32 aspect-video flex items-center justify-center relative">
-                <Image 
+                <CertificateImageDialog 
                   src="/python-udemy.jpg" 
                   alt="Python Udemy Certificate" 
-                  fill 
-                  className="object-cover"
                 />
               </div>
               <div className="flex-1 space-y-2">
