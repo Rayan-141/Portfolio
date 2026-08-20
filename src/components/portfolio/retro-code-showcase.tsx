@@ -136,7 +136,7 @@ export function RetroCodeShowcase() {
     animate(cards, {
       opacity: [0, 1],
       translateY: [14, 0],
-      delay: (_el, index) => index * 70,
+      delay: (_el: any, index: number) => index * 70,
       duration: 500,
       ease: "outCubic",
     });
