@@ -21,7 +21,7 @@ export const links: LinkItem[] = [
     description: "Get in touch via email",
   },
   {
-    href: "https://leetcode.com/u/8RlPKK1HOv/",
+    href: "https://leetcode.com/u/Rayan_17/",
     name: "LeetCode",
     description: "My competitive programming profile",
   },
