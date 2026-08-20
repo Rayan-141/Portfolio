@@ -48,13 +48,7 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr]">
           <div className="mx-auto w-full max-w-[340px] h-fit border-4 border-black bg-primary p-3 shadow-retro-md">
             <div className="relative flex items-center justify-center border-4 border-black bg-card overflow-hidden aspect-[4/5]">
-              <Image 
-                src="/profile-image.png" 
-                alt="Profile Image" 
-                fill 
-                className="object-cover object-top" 
-                priority
-              />
+              {/* Image intentionally left empty as requested */}
             </div>
             <div className="mt-3 flex items-center justify-center gap-3">
               <Link
