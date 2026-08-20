@@ -46,8 +46,8 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
         data-about-reveal
       >
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr]">
-          <div className="mx-auto w-full max-w-xs border-4 border-black bg-primary p-3 shadow-retro-md">
-            <div className="relative flex items-center justify-center border-4 border-black bg-card overflow-hidden aspect-square" style={{minHeight: "250px"}}>
+          <div className="mx-auto w-full max-w-[260px] border-4 border-black bg-primary p-3 shadow-retro-md">
+            <div className="relative flex items-center justify-center border-4 border-black bg-card overflow-hidden" style={{ aspectRatio: "3/4" }}>
               <Image 
                 src="/profile-image.png" 
                 alt="Profile Image" 
