@@ -117,7 +117,7 @@ export function HomePageClient({
                   asChild
                   className="w-full border-4 border-black px-4 py-2 text-sm font-black uppercase tracking-wide shadow-retro retro-press sm:w-auto sm:px-6 sm:py-3 sm:text-base"
                 >
-                  <Link href="https://drive.google.com/file/d/1rZiXl562q7aVyk1kJ2nO85YBAq8ixTiw/view" target="_blank" rel="noopener noreferrer">Resume</Link>
+                  <Link href="https://drive.google.com/drive/folders/1loJNN80DPNzx2U--6rbYC9cUvZ8T2TOh?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</Link>
                 </Button>
                 <Button
                   variant="secondary"
