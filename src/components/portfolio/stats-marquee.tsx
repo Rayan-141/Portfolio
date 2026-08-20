@@ -14,6 +14,7 @@ const items = [
   "SQL",
   "Python (Pandas, NumPy)",
   "AWS",
+  "Machine Learning (ML)",
 ];
 
 export function StatsMarquee() {
