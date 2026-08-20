@@ -46,13 +46,13 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
         data-about-reveal
       >
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1.3fr]">
-          <div className="mx-auto w-full max-w-[280px] h-fit border-4 border-black bg-primary p-3 shadow-retro-md">
-            <div className="relative flex items-center justify-center border-4 border-black bg-card overflow-hidden aspect-square">
+          <div className="mx-auto w-full max-w-xs h-fit border-4 border-black bg-primary p-3 shadow-retro-md">
+            <div className="relative flex items-center justify-center border-4 border-black bg-card overflow-hidden aspect-[3/4]">
               <Image 
                 src="/profile-image.png" 
                 alt="Profile Image" 
                 fill 
-                className="object-cover object-top" 
+                className="object-cover" 
                 priority
               />
             </div>
