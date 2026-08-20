@@ -72,7 +72,14 @@ function formatPeriod(start: string, end: string): string {
 }
 
 const timelineItems: TimelineItem[] = [
-  // Experience items will be added here
+  {
+    period: formatPeriod("May 2026", "Jul 2026"),
+    title: "Web Developer Intern",
+    description: "InAmigos Foundation (Remote)",
+    highlights: [
+      "Completed a 2-month remote internship focusing on web development.",
+    ],
+  },
 ];
 
 export default function AboutPage() {
