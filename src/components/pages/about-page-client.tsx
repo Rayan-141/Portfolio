@@ -91,22 +91,16 @@ export function AboutPageClient({ timelineItems }: AboutPageClientProps) {
             </h1>
             <div className="mt-5 space-y-4 text-sm font-medium leading-relaxed sm:text-base md:text-lg">
               <p>
-                Hey there, I&apos;m Rayan, a self-taught full stack
-                developer, founder, entrepreneur, freelancer, and open-source
-                builder. I have been coding since childhood, and that early
-                curiosity became a long-term focus on building useful products
-                that solve real business problems.
+                I am a <strong>Full-Stack Developer</strong> with skills in <strong>HTML, CSS, JavaScript, React.js, Node.js, Express.js, MongoDB, SQL, and AWS</strong>. I also work with <strong>Git, GitHub, REST APIs, JWT authentication, and cloud deployment</strong>.
               </p>
               <p>
-                I help startups and businesses scale with developer-first tools,
-                robust product systems, and practical architecture that stays
-                reliable, maintainable, and outcome-driven as teams grow.
+                I completed a <strong>2-month Web Developer internship at InAmigos Foundation (May–July 2026)</strong>, where I gained professional experience. I am also learning <strong>Machine Learning</strong> and exploring <strong>DevOps and System Design</strong>.
               </p>
               <p>
-                I work across frontend, backend, and automation layers, explore
-                AI and machine learning in production-focused use cases, and
-                ship in public because measurable progress matters more than
-                hidden drafts.
+                My goal is to get an <strong>internship or entry-level role</strong> as a Full-Stack Developer, ML Engineer, or Software Developer, where I can build real-world projects and grow my skills.
+              </p>
+              <p>
+                Outside technology, I enjoy <strong>football and swimming</strong>. I also have a strong interest in <strong>finance, investing, trading, Forex, and Crypto</strong>. In the future, I would like to explore the connection between <strong>technology and finance, especially FinTech and trading technology</strong>.
               </p>
             </div>
 
